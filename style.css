@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+p{
+    margin-bottom: 20px;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Common CSS */
+.section-title h2{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+.section-title p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+    margin-bottom: 16px;
+}
+
+.button{
+    padding: 21px 25px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    background: #F15B22;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.button.button-white{
+    background-color: #fff;
+    color: #F15B22;
+}
+
+
+/* Banner Area */
+.banner-area{
+    background-image: url("./Images/banner1.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    padding-top: 216px;
+    padding-bottom: 167px;
+}
+
+.banner-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.banner-content{
+    flex: 0 0 50%;
+    text-align: right;
+}
+.banner-content h2{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 76px;
+    margin-bottom: 24px;
+    color: #151414;
+}
+.banner-content p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+    margin-bottom: 32px;
+}
+
+/* Content Area */
+
+
+.content-area{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.content-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.content-image{
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+.content-block{
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 120px;
+}
+.content-list{
+    padding: 0;
+    margin: 0;
+}
+.content-list li{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    color: #444343;
+    position: relative;
+    list-style: none;
+    padding-left: 30px;
+}
+.content-list li::before{
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #16D887;
+    
+
+}
+
+/* Brand Area */
+.brand-area .section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.brand-images{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.single-brand{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+}
+.single-brand img{
+    max-width: 93px;
+    margin: 0 auto;
+}
+.single-brand h3{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #151414;
+
+}
+.single-brand p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #737272;
+
+}
+/* Promo Area */
+
+.promo-area{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  
+}
+
+.promo-wrap{
+    background-image: url(./Images/watch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+.promo-wrap::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.promo-left h2{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+/* Footer */
+.footer-area{
+    background: #151414;
+}
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-left{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-right: 100px;
+}
+.footer-left .logo a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 16px;
+}
+.footer-left p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.footer-contact{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.footer-contact li {
+    color: #fff;
+    list-style: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-social-icon{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.footer-social-icon li{margin-right: 10px;}
+
+.footer-right{
+    flex: 0 0 50%;
+    max-width: 325px;
+    margin: 0 auto;
+}
+.footer-title{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.footer-right form input{
+    width: 100%;
+    height: 64px;
+    background-color: transparent;
+    padding: 5px 21px;
+    margin-bottom: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+.footer-right form input::placeholder{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F3F3F3;
+}
